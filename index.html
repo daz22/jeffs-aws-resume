@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Jeffrey M. Deal - Online Resume</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="updateCounter()">
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="headshot.jpg" alt="Headshot" class="headshot">
+        <h1>Dr. Jeffrey M. Deal</h1>
+        <p><a href="mailto:jeff@n6networks.com" class="email-link">jeff@n6networks.com</a></p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#" onclick="showPage('home')">Home</a></li>
+          <li><a href="#" onclick="showPage('experience')">Experience</a></li>
+          <li><a href="#" onclick="showPage('skills')">Skills</a></li>
+          <li><a href="#" onclick="showPage('education')">Education</a></li>
+        </ul>
+      </nav>
+      <div class="social-media">
+    <a href="https://www.linkedin.com/in/drjeffreydeal/" target="_blank">
+        <img src="linkedin-icon.png" alt="LinkedIn" width="24" height="24">
+    </a>
+    <a href="https://github.com/daz22" target="_blank">
+        <img src="github-icon.png" alt="GitHub" width="24" height="24">
+    </a>
+</div>
+      <p>Page Visits: <span id="visitCounter">0</span></p>
+    </aside>
+    
+    <!-- Main Content -->
+    <main class="content">
+      <div id="home" class="content-section active">
+        <h2>Welcome</h2>
+        <p>Welcome to my professional portfolio, showcasing my journey and expertise in cybersecurity, IT, and network engineering.</p>
+      </div>
+      <div id="experience" class="content-section">
+        <h2>Employment History</h2>
+        <ul>
+          <li>Sr. Info Security Engineer, TIAA</li>
+          <li>Sr. Lead Security Engineer, Naval Telecommunication Area Master Station Atlantic, Detachment Jax, Jacksonville, FL</li>
+          <li>Sr. Lead Network Security Engineer, U.S. Navy</li>
+          <li>Sr. Info Security Engineer, Navy Region Southwest HQ, San Diego, CA</li>
+          <li>Lead Network Engineer, Naval Telecommunication Area Master Station Atlantic, Detachment Rota, Rota, Spain</li>
+          <li>Lead Network Engineer, Naval Special Warfare Special Recon Team One, San Diego, CA</li>
+          <li>Network Engineer, Fighter Squadron Nine Four, Lemoore CA</li>
+          <li>Desktop Support Engineer, Patrol Squadron Thirty, Jacksonville, FL</li>
+        </ul>
+      </div>
+      <div id="skills" class="content-section">
+        <h2>Skills & Certifications</h2>
+        <ul>
+          <li>Certified Information System Security Professional (CISSP)</li>
+          <li>Cisco Certified Network Associate (CCNA)</li>
+          <li>Amazon Certified Cloud Practitioner (AWS CCP)</li>
+          <li>Zscaler Zero Trust Certified Associate (ZTCA)</li>
+          <li>CompTIA Security+, Network+, A+, GreenIT</li>
+        </ul>
+      </div>
+      <div id="education" class="content-section">
+        <h2>Education</h2>
+        <ul>
+          <li>Doctor of Computer Science (DCS), Cybersecurity and Information Assurance, Colorado Technical University, 2021</li>
+          <li>Master of Science (M.S), Computer Information Systems, Colorado Technical University, 2017</li>
+          <li>Bachelor of Science (B.S), Information Technology and Network Management, Colorado Technical University, 2014</li>
+        </ul>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
